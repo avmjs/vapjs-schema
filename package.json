@@ -1,7 +1,8 @@
 {
-  "name": "ethjs-schema",
+  "name": "vapjs-schema",
+  "namespace": "vapjs",
   "version": "0.2.1",
-  "description": "A complete Ethereum RPC specification as a JSON object export.",
+  "description": "A complete Vapory RPC specification as a JSON object export.",
   "main": "src/schema.json",
   "files": [
     "dist",
@@ -11,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/ethjs/ethjs-schema.git"
+    "url": "git+ssh://git@github.com/vapjs/vapjs-schema.git"
   },
   "keywords": [
-    "ethereum",
+    "vapory",
     "json",
     "rpc",
     "specification",
@@ -25,7 +26,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ethjs/ethjs-schema/issues"
+    "url": "https://github.com/vapjs/vapjs-schema/issues"
   },
-  "homepage": "https://github.com/ethjs/ethjs-schema#readme"
+  "homepage": "https://github.com/vapjs/vapjs-schema#readme"
 }
