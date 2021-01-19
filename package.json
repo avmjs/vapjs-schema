@@ -8,8 +8,7 @@
     "dist",
     "src"
   ],
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/vapjs/vapjs-schema.git"
