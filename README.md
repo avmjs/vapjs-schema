@@ -1,20 +1,20 @@
-## ethjs-schema
+## vapjs-schema
 
 <div>
   <!-- Dependency Status -->
-  <a href="https://david-dm.org/ethjs/ethjs-schema">
-    <img src="https://david-dm.org/ethjs/ethjs-schema.svg"
+  <a href="https://david-dm.org/vapjs/vapjs-schema">
+    <img src="https://david-dm.org/vapjs/vapjs-schema.svg"
     alt="Dependency Status" />
   </a>
 
   <!-- devDependency Status -->
-  <a href="https://david-dm.org/ethjs/ethjs-schema#info=devDependencies">
-    <img src="https://david-dm.org/ethjs/ethjs-schema/dev-status.svg" alt="devDependency Status" />
+  <a href="https://david-dm.org/vapjs/vapjs-schema#info=devDependencies">
+    <img src="https://david-dm.org/vapjs/vapjs-schema/dev-status.svg" alt="devDependency Status" />
   </a>
 
   <!-- NPM Version -->
-  <a href="https://www.npmjs.org/package/ethjs-schema">
-    <img src="http://img.shields.io/npm/v/ethjs-schema.svg"
+  <a href="https://www.npmjs.org/package/vapjs-schema">
+    <img src="http://img.shields.io/npm/v/vapjs-schema.svg"
     alt="NPM version" />
   </a>
 
@@ -26,18 +26,18 @@
 
 <br />
 
-The complete Ethereum RPC specification as a JSON object export.
+The complete Vapory RPC specification as a JSON object export.
 
 ## Install
 
 ```
-npm install --save ethjs-schema
+npm install --save vapjs-schema
 ```
 
 ## Usage
 
 ```js
-const schema = require('ethjs-schema');
+const schema = require('vapjs-schema');
 
 console.log(schema.tags);
 
@@ -46,7 +46,7 @@ console.log(schema.tags);
 
 ## About
 
-This is a pure JSON export of the Ethereum RPC specification. This can be, and is being used to generate the `ethjs-query` object. This object specification is not standardized, it is the leanest data structure implementation I could come up with for the Ethereum RPC spec.
+This is a pure JSON export of the Vapory RPC specification. This can be, and is being used to generate the `vapjs-query` object. This object specification is not standardized, it is the leanest data structure implementation I could come up with for the Vapory RPC spec.
 
 The entire spec is contained in the [schema.json](src/schema.json) file.
 
@@ -65,7 +65,7 @@ The entire spec is contained in the [schema.json](src/schema.json) file.
   ```
   {
     methods: {
-      "eth_getBalance": [["D20", "Q|T"], "Q", 1, 2],
+      "vap_getBalance": [["D20", "Q|T"], "Q", 1, 2],
       ...
     },
     ...
@@ -97,7 +97,7 @@ Note, post version 0.1.1 value primitives have been compressed.
 
 The `__required` property is added to specify which properties of the object must be fulfilled in order to be a valid object structure (ready for payload transmission).
 
-  - "EthSyncing"
+  - "VapSyncing"
   - "SendTransaction"
   - "EstimateTransaction"
   - "CallTransaction"
@@ -138,30 +138,30 @@ Please help better the ecosystem by submitting issues and pull requests to defau
 
 ## Guides
 
-Please see the Ethereum RPC specification hosted on their github:
+Please see the Vapory RPC specification hosted on their github:
 
-https://github.com/ethereum/wiki/wiki/JSON-RPC
+https://github.com/vaporyco/wiki/wiki/JSON-RPC
 
 ## Help out
 
 There is always a lot of work to do, and will have many rules to maintain. So please help out in any way that you can:
 
-- Create, enhance, and debug ethjs rules (see our guide to ["Working on rules"](./github/CONTRIBUTING.md)).
+- Create, enhance, and debug vapjs rules (see our guide to ["Working on rules"](./github/CONTRIBUTING.md)).
 - Improve documentation.
 - Chime in on any open issue or pull request.
-- Open new issues about your ideas for making `ethjs-schema` better, and pull requests to show us how your idea works.
+- Open new issues about your ideas for making `vapjs-schema` better, and pull requests to show us how your idea works.
 - Add new tests to *absolutely anything*.
 - Spread the word.
 
 Please consult our [Code of Conduct](CODE_OF_CONDUCT.md) docs before helping out.
 
-We communicate via [issues](https://github.com/ethjs/ethjs-schema/issues) and [pull requests](https://github.com/ethjs/ethjs-schema/pulls).
+We communicate via [issues](https://github.com/vapjs/vapjs-schema/issues) and [pull requests](https://github.com/vapjs/vapjs-schema/pulls).
 
 ## Important documents
 
 - [Changelog](CHANGELOG.md)
 - [Code of Conduct](CODE_OF_CONDUCT.md)
-- [License](https://raw.githubusercontent.com/ethjs/ethjs-schema/master/LICENSE)
+- [License](https://raw.githubusercontent.com/vapjs/vapjs-schema/master/LICENSE)
 
 ## Licence
 
